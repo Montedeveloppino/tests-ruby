@@ -19,8 +19,8 @@ def array_42(arr)
   return arr.include?(42)
 end
 
-def expect(magic_array)
-  return 
+def magic_array(arr)
+  return arr.flatten.sort.map {|a| 2*a}.reject{|a| a % 3 == 0 }.uniq
 end
 
 
