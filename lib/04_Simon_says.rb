@@ -1,10 +1,8 @@
 def echo(hello,bye)
-  def hello(hello)
+  def hello(hello,bye)
   return "#{hello}"
   end
-  def bye(bye)
+  def bye(hello,bye)
   return "#{bye}"
   end
 end
-
-puts echo(hello,bye)
