@@ -1,6 +1,3 @@
-alice = "Alice"
-bob = "Bob"
-
 def hello
 return "Hello!"
 end
@@ -12,7 +9,3 @@ end
 def greet(bob)
   return "Hello, #{bob}!"
 end
-
-puts hello
-puts greet(alice)
-puts greet(bob)
