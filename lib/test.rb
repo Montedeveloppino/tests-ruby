@@ -1,10 +1,16 @@
-def echo(hello,bye)
-  def hello(hello)
-  return "#{hello}"
+
+
+#print str.split(/ |\_|\-/).map(&:capitalize).join(" ")
+def string_upc
+  str = "bonjour tout le monde a vous"
+tab = str.split(" ")
+  tab.each do |x| 
+    if(x.eql?(tab[0]) || x.length > 3) 
+      x.capitalize!
+    end
   end
-  def bye(bye)
-  return "#{bye}"
-  end
+  return tab.join(" ")
 end
 
-puts echo(hello,bye)
+
+print string_upc
